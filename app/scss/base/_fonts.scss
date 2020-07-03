@@ -1,0 +1,23 @@
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furlw2, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-display: swap; // initially display system fonts
+    src: local($fname),
+      url($furlw2) format('woff2'),
+      url($furl) format('woff');
+  }
+}
+
+// Open Sans font
+@include font('Open-Sans', normal, 400, '../../fonts/open-sans-400.woff2', '../../fonts/open-sans-400.woff');
+@include font('Open-Sans', normal, 700, '../../fonts/open-sans-700.woff2', '../../fonts/open-sans-700.woff');
+@include font('Open-Sans', normal, 800, '../../fonts/open-sans-800.woff2', '../../fonts/open-sans-800.woff');
+// Lato font
+@include font('Lato', normal, 300, '../../fonts/lato-300.woff2', '../../fonts/lato-300.woff');
+@include font('Lato', normal, 400, '../../fonts/lato-400.woff2', '../../fonts/lato-400.woff');
+@include font('Lato', normal, 700, '../../fonts/lato-700.woff2', '../../fonts/lato-700.woff');
+@include font('Lato', normal, 900, '../../fonts/lato-900.woff2', '../../fonts/lato-900.woff');

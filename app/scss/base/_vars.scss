@@ -1,0 +1,43 @@
+// USER VARIABLES SECTION
+
+// simple colors
+$primary-light: #FFFFFF; // Primary Light Color
+$primary-dark: #000000; // Primary Dark Color
+$primary-accent: #005FA3; // Primary Accent Color
+$primary-bgcolor: #ffffff; //Primary Background Color
+$section-grey: #EBEBEB; //Gray Background Section Color
+// font colors
+$title-color: #333333; // Primary Title Color
+$heading-color: #BDBDBD; // Primary Heading Color
+$font-light: #FFFFFF; // Primary Light Font Color
+$font-dark: #000000; // Primary Dark Font Color
+
+// fonts
+$systemfont: -apple-system,
+BlinkMacSystemFont,
+Arial,
+sans-serif; // System Font Family
+$title-font: 'Open-Sans',
+sans-serif; // Open-Sans Font Family
+$text-font: 'Lato',
+sans-serif; // Open-Sans Font Family
+$fontsize: 18; // Html, Body Primary Font Size
+
+//UTILITIES
+$transition: 0.35s;
+
+
+// Bootstrap compatible gutter variables
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+
+// Bootstrap container breakpoints
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px);
+
+// Bootstrap color variables
+$primary: $primary-accent;
+$btn-border-radius: 0;
+$nav-pills-border-radius: 0;
