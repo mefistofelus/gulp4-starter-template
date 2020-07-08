@@ -7,29 +7,17 @@ html {
 *,
 *:before,
 *:after {
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
   box-sizing: inherit;
   outline: none;
-}
-
-input,
-textarea {
-  outline: none;
-
-  &:focus:required:invalid {
-    border-color: red
-  }
-
-  &:required:valid {
-    border-color: green
-  }
-}
-
-ol,
-ul,
-li,
-p {
-  margin: 0;
-  padding: 0;
 }
 
 ::placeholder {
@@ -50,8 +38,57 @@ body {
   background-color: $primary-bgcolor;
   color: set-text-color($primary-bgcolor);
   //color: $main-font-color;
+  
+  &::-webkit-scrollbar{
+    width: .8em;
+  }
+  
+  &::-webkit-scrollbar-track{
+    background-color: #cccccc;
+  }
+  
+  &::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+  }
+}
+
+input,
+textarea {
+  outline: none;
+
+  &:focus:required:invalid {
+    border-color: red
+  }
+
+  &:required:valid {
+    border-color: green
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 img {
   max-width: 100%;
+}
+
+a {
+  color: $primaryColor;
+}
+
+li {
+  list-style-type: none;
 }
