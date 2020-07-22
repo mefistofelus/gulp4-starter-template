@@ -27,7 +27,7 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.1",
+    "gulp-plumber": "^1.2.1"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
